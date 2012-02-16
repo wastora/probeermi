@@ -40,7 +40,7 @@ public class RemMethClass extends UnicastRemoteObject implements RMI_interface, 
 		nrOfNodes = n;
 		initTimeVector(n);
 		buffer = new LinkedList<MsgObj>();
-		history = new LinkedList<MsgObj>();
+		history = new LinkedList<MsgObj>(); //for delivery
 		try
 		{
 			java.rmi.Naming.bind(name, this);
